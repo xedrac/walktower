@@ -14,10 +14,14 @@ common warnings
 executable walktower
     import:           warnings
     main-is:          Main.hs
-    other-modules:    Types
-    build-depends:    base ^>=4.17.2.1,
+    other-modules:    WalkTower.Types
+                      WalkTower.Commands
+                      WalkTower.Equipment
+    build-depends:    base >=4.17.2.1,
                       network,
                       bytestring,
-                      text
+                      text,
+                      containers,
+                      utf8-string
     hs-source-dirs:   app
     default-language: GHC2021

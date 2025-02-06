@@ -1,4 +1,4 @@
-module Types where
+module WalkTower.Types where
 
 -- Basic stats of a player or piece of equipment
 data BasicStats = BasicStats

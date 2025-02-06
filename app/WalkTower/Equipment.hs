@@ -1,6 +1,6 @@
-module Equipment where
+module WalkTower.Equipment where
 
-import Types qualified as T
+import WalkTower.Types
 
 -- Location that a piece of equipment is worn
 data Slot
@@ -15,6 +15,6 @@ data Slot
 -- A piece of equipment that can be worn or wielded
 data Equipment = Equipment
   { name :: String
-  , stats :: T.BasicStats
+  , stats :: BasicStats
   , slot :: Slot
   }
